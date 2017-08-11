@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="my-cordova-plugin"
+    id="diy-cordova-plugin"
     version="1.0.0">
     <name>Cordova Plugin Template</name>
     <description></description>
@@ -15,32 +15,32 @@
       <js-module src="www/plugin.js" name="plugin">
         <runs/>
 
-        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="MyCordovaPlugin" />
+        <!-- This is the window variable name you want, like window.DiyCordovaPlugin -->
+        <clobbers target="DiyCordovaPlugin" />
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="MyCordovaPlugin">
-          <param name="android-package" value="com.example.MyCordovaPlugin" />
+        <feature name="DiyCordovaPlugin">
+          <param name="android-package" value="com.example.DiyCordovaPlugin" />
           <param name="onload" value="true" />
         </feature>
       </config-file>
 
-      <source-file src="src/android/com/example/MyCordovaPlugin.java" target-dir="src/com/example/" />
+      <source-file src="src/android/com/example/DiyCordovaPlugin.java" target-dir="src/com/example/" />
     </platform>
 
     <!-- ios -->
     <platform name="ios">
         <js-module src="www/plugin.js" name="plugin">
             <runs/>
-            <clobbers target="MyCordovaPlugin" />
+            <clobbers target="DiyCordovaPlugin" />
         </js-module>
         <config-file target="config.xml" parent="/*">
-            <feature name="MyCordovaPlugin">
-                <param name="ios-package" value="MyCordovaPlugin" onload="true" />
+            <feature name="DiyCordovaPlugin">
+                <param name="ios-package" value="DiyCordovaPlugin" onload="true" />
             </feature>
         </config-file>
 
-        <header-file src="src/ios/MyCordovaPlugin.h" />
-        <source-file src="src/ios/MyCordovaPlugin.m" />
+        <header-file src="src/ios/DiyCordovaPlugin.h" />
+        <source-file src="src/ios/DiyCordovaPlugin.m" />
     </platform>
 </plugin>
