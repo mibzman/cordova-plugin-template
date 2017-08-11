@@ -1,9 +1,9 @@
 
 var exec = require('cordova/exec');
 
-var PLUGIN_NAME = 'DiyCordovaPlugin';
+var PLUGIN_NAME = 'MyCordovaPlugin';
 
-var DiyCordovaPlugin = {
+var MyCordovaPlugin = {
   echo: function(phrase, cb) {
     exec(cb, null, PLUGIN_NAME, 'echo', [phrase]);
   },
@@ -12,4 +12,4 @@ var DiyCordovaPlugin = {
   }
 };
 
-module.exports = DiyCordovaPlugin;
+module.exports = MyCordovaPlugin;
