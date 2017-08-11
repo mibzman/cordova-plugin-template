@@ -10,6 +10,7 @@
 - (void)echo:(CDVInvokedUrlCommand *)command {
   NSString* phrase = [command.arguments objectAtIndex:0];
   NSLog(@"%@", phrase);
+  NSLog(@"%@", phrase);
 }
 
 - (void)getDate:(CDVInvokedUrlCommand *)command {
